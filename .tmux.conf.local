@@ -506,4 +506,7 @@ tmux_conf_uninstall_plugins_on_reload=true
 #
 # "$@"
 # # /!\ do not remove the previous line
-# #     do not write below this line
+
+# set -gw allow-rename
+setw -g allow-rename off
+unbind-key C-a
